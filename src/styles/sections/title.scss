@@ -1,0 +1,10 @@
+@use '../utils/index.scss' as *;
+
+.title {
+  @include base-font-style($secondaryFont, 36px, 700, $headerSecondaryColor);
+  text-align: center;
+
+  @include onTablet {
+    font-size: $mainHeaderSize;
+  }
+}

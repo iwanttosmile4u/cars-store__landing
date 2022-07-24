@@ -1,0 +1,94 @@
+@use '../utils/index.scss' as *;
+
+.header {
+  padding: 20px 40px 150px;
+  background-image: url('/dist/img/backgrounds/header_bgr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0 right 35%;
+
+  @include onTablet {
+    padding: 20px 80px 150px;
+  }
+
+  @include onDesktop {
+    padding: 20px 100px 150px;
+    background-position: center right;
+  }
+
+  &__logo {
+    cursor: pointer;
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__menu-btn {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    
+    cursor: pointer;
+  }
+
+  &__burger-btn {
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.8s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    &::before {
+      transform: translateY(-6px);
+    }
+
+    &::after {
+      transform: translateY(6px);
+    }
+  }
+
+  &__main-title {
+    margin-top: 80px;
+    @include base-font-style($mainFont, $mainHeaderSize, 700, $bodyBgrColor);
+    line-height: 50px;
+
+    @include onDesktop {
+      margin: 135px 0 30px;
+      line-height: 68px;
+    }
+  }
+
+  &__description {
+    max-width: 295px;
+    @include base-font-style($mainFont, $smallTextSize, 400, $bodyBgrColor);
+    line-height: 20px;
+
+    &:first-child {
+      margin-top: 50px;
+
+      @include onDesktop {
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '../utils/index.scss' as *;
+
+.btn {
+  padding: 13px 90px;
+  @include base-font-style($mainFont, $smallTextSize, 500, $bodyBgrColor);
+  line-height: 27px;
+  border: 2px solid $bodyBgrColor;
+  border-radius: 15px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  outline: hidden;
+
+  &:hover {
+    background-color: $bodyBgrColor;
+    color: $textColor;
+  }
+}

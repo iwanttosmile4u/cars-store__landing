@@ -1,0 +1,17 @@
+@use '../utils/index.scss' as *;
+
+.page {
+  &__body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    width: 295px;
+    margin-top: 40px;
+
+    @include onDesktop {
+      margin: 72px 0 150px;
+    }
+  }
+}
