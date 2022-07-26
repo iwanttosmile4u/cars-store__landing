@@ -1,0 +1,30 @@
+@use '../utils/index.scss' as *;
+
+.custom-card {
+  &__year {
+    @include base-font-style($secondaryFont, $h6HeaderSize, 400, $textOptionColor);
+    line-height: 26px;
+  }
+
+  &__title {
+    @include base-font-style($mainFont, $h5HeaderSize, 400, $textColor);
+    line-height: 23px;
+  }
+
+  &__description {
+    @include base-font-style($mainFont, $spanFontSize, 300, $textOptionColor);
+    &:not(:last-child) {
+      margin-right: 5px;
+      &::after {
+        content: '|';
+        font-size: 18px;
+        margin-left: 5px;
+        color: $textOptionColor;
+      }
+    }
+  }
+
+  &__price {
+    @include base-font-style($mainFont, $h5HeaderSize, 500, $textColor);
+  }
+}

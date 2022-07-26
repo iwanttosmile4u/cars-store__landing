@@ -7,8 +7,12 @@
   }
 
   &__btn {
-    width: 295px;
+    width: 200px;
     margin-top: 40px;
+
+    @include onTablet {
+      width: 295px;
+    }
 
     @include onDesktop {
       margin: 72px 0 150px;

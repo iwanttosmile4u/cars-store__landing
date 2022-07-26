@@ -12,11 +12,10 @@
   }
 }
 
-@mixin universal-flex($display, $direction, $j-content, $a-items) {
-  display: $display;
-  flex-direction: $direction;
-  justify-content: $j-content;
-  align-items: $a-items;
+@mixin onMaxDesktop {
+  @media (min-width: 1400px) {
+    @content;
+  }
 }
 
 @mixin base-font-style($f-family, $f-size, $f-weight, $color) {
@@ -24,4 +23,9 @@
   font-size: $f-size;
   font-weight: $f-weight;
   color: $color;
+}
+
+@mixin border-style($border, $b-radius) {
+  border: $border;
+  border-radius: $b-radius;
 }

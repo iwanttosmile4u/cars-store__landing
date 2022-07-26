@@ -1,0 +1,23 @@
+@use '../utils/index.scss' as *;
+
+.sorting {
+  cursor: pointer;
+
+  &__text {
+    @include base-font-style($mainFont, 12px, 400, $textColor);
+    line-height: 16px;
+
+    @include onTablet {
+      font-size: $spanFontSize;
+    }
+  }
+
+  &__icons {
+    position: relative;
+  }
+
+  &__up-icon {
+    position: absolute;
+    right: 6px;
+  }
+}
