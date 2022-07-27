@@ -1,6 +1,8 @@
 @use '../utils/index.scss' as *;
 
 .custom-card {
+  position: relative;
+
   &__year {
     @include base-font-style($secondaryFont, $h6HeaderSize, 400, $textOptionColor);
     line-height: 26px;
@@ -9,6 +11,11 @@
   &__title {
     @include base-font-style($mainFont, $h5HeaderSize, 400, $textColor);
     line-height: 23px;
+    transition: border-bottom 0.2s linear;
+
+    &:hover {
+      border-bottom: 1px solid $textColor;
+    }
   }
 
   &__description {
@@ -27,4 +34,25 @@
   &__price {
     @include base-font-style($mainFont, $h5HeaderSize, 500, $textColor);
   }
+
+  &__extra {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $textOptionColor;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  &__extra-text {
+    @include base-font-style($mainFont, $mainHeaderSize, 500, #fff);
+  }
+}
+
+.sold .custom-card__extra {
+  display: flex;
 }

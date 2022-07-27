@@ -1,0 +1,26 @@
+@use '../utils/index.scss' as *;
+
+.footer {
+  background-color: $textColor;
+
+  &__logo {
+    cursor: pointer;
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__social-icon {
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

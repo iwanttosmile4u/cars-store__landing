@@ -3,6 +3,7 @@
 .title {
   @include base-font-style($secondaryFont, 36px, 700, $headerSecondaryColor);
   text-align: center;
+  text-transform: uppercase;
 
   @include onTablet {
     font-size: $mainHeaderSize;

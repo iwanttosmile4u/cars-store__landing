@@ -1,232 +1,3 @@
-const cars = [
-  {
-    "id": 1,
-    "model": "Volkswagen Tiguan",
-    "year": 2019,
-    "race": "19,855",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "34,888",
-    "photo": "../src/img/cars/Volkswagen/Tiguan.png"
-  },
-  {
-    "id": 2,
-    "model": "Toyota Highlander XL",
-    "year": 2014,
-    "race": "69,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "27,875",
-    "photo": "../src/img/cars/Toyota/highLinder_XL.png",
-    tags: ['new']
-  },
-  {
-    "id": 3,
-    "model": "Lexus RX 350 LUXURY",
-    "year": 2017,
-    "race": "39,850",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "38,775",
-    "photo": "../src/img/cars/Lexus/lexus_RX350.png"
-  },
-  {
-    "id": 4,
-    "model": "Toyota Highlander LE",
-    "year": 2016,
-    "race": "104,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "23,728",
-    "photo": "../src/img/cars/Toyota/highlinder_LE.png"
-  },
-  {
-    "id": 5,
-    "model": "Hyundai Elantra",
-    "year": 2017,
-    "race": "95,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "11,788",
-    "photo": "../src/img/cars/Hyundai/elantra.png"
-  },
-  {
-    "id": 6,
-    "model": "Mercedes-Benz GLE",
-    "year": 2016,
-    "race": "59,800",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "38,878",
-    "photo": "../src/img/cars/Mercedes/mersedes-benz.png"
-  },
-  {
-    "id": 7,
-    "model": "Toyota Venza",
-    "year": 2015,
-    "race": "99,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "18,620",
-    "photo": "../src/img/cars/Toyota/venza.png"
-  },
-  {
-    "id": 8,
-    "model": "Lexus RX 350 F-SPORT",
-    "year": 2016,
-    "race": "86,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "34,888",
-    "photo": "../src/img/cars/Lexus/x-sport.png",
-    tags: ['new']
-  },
-  {
-    "id": 9,
-    "model": "Volkswagen Tiguan",
-    "year": 2019,
-    "race": "19,855",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "34,888",
-    "photo": "../src/img/cars/Volkswagen/Tiguan.png"
-  },
-  {
-    "id": 10,
-    "model": "Toyota Highlander XL",
-    "year": 2014,
-    "race": "69,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "27,875",
-    "photo": "../src/img/cars/Toyota/highLinder_XL.png"
-  },
-  {
-    "id": 11,
-    "model": "Lexus RX 350 LUXURY",
-    "year": 2017,
-    "race": "39,850",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "38,775",
-    "photo": "../src/img/cars/Lexus/lexus_RX350.png"
-  },
-  {
-    "id": 12,
-    "model": "Toyota Highlander LE",
-    "year": 2016,
-    "race": "104,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "23,728",
-    "photo": "../src/img/cars/Toyota/highlinder_LE.png"
-  },
-  {
-    "id": 13,
-    "model": "Volkswagen Tiguan",
-    "year": 2019,
-    "race": "19,855",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "34,888",
-    "photo": "../src/img/cars/Volkswagen/Tiguan.png",
-    tags: ['new']
-  },
-  {
-    "id": 14,
-    "model": "Toyota Highlander XL",
-    "year": 2014,
-    "race": "69,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "27,875",
-    "photo": "../src/img/cars/Toyota/highLinder_XL.png"
-  },
-  {
-    "id": 15,
-    "model": "Lexus RX 350 LUXURY",
-    "year": 2017,
-    "race": "39,850",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "38,775",
-    "photo": "../src/img/cars/Lexus/lexus_RX350.png"
-  },
-  {
-    "id": 16,
-    "model": "Toyota Highlander LE",
-    "year": 2016,
-    "race": "104,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "23,728",
-    "photo": "../src/img/cars/Toyota/highlinder_LE.png"
-  },
-  {
-    "id": 17,
-    "model": "Hyundai Elantra",
-    "year": 2017,
-    "race": "95,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "11,788",
-    "photo": "../src/img/cars/Hyundai/elantra.png"
-  },
-  {
-    "id": 18,
-    "model": "Mercedes-Benz GLE",
-    "year": 2016,
-    "race": "59,800",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "38,878",
-    "photo": "../src/img/cars/Mercedes/mersedes-benz.png"
-  },
-  {
-    "id": 19,
-    "model": "Toyota Venza",
-    "year": 2015,
-    "race": "99,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "18,620",
-    "photo": "../src/img/cars/Toyota/venza.png"
-  },
-  {
-    "id": 20,
-    "model": "Lexus RX 350 F-SPORT",
-    "year": 2016,
-    "race": "86,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "34,888",
-    "photo": "../src/img/cars/Lexus/x-sport.png",
-    tags: ['new']
-  },
-  {
-    "id": 21,
-    "model": "Volkswagen Tiguan",
-    "year": 2019,
-    "race": "19,855",
-    "transmission": "Automatic",
-    "engines": "Diesel",
-    "price": "34,888",
-    "photo": "../src/img/cars/Volkswagen/Tiguan.png",
-    tags: ['new']
-  },
-  {
-    "id": 22,
-    "model": "Toyota Highlander XL",
-    "year": 2014,
-    "race": "69,000",
-    "transmission": "Automatic",
-    "engines": "Gas",
-    "price": "27,875",
-    "photo": "../src/img/cars/Toyota/highLinder_XL.png",
-    tags: ['sold']
-  }
-];
-
 // Showing menu - mobile and tablet
 
 const hamburger = document.querySelector('.header__burger-btn');
@@ -241,21 +12,267 @@ closeMenuBtn.addEventListener('click', () => {
   menu.style.transform = 'translateX(-100%)';
 });
 
-function getCard({model, year, race, transmission, engines, price, photo, tags = []}) {
+// Showing cards dynamically and filtering cars model when model select
+
+const cars = [
+  {
+    id: 1,
+    model: 'Volkswagen',
+    modelDetails: 'Tiguan',
+    year: 2019,
+    race: '19,855',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '34,888',
+    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    tags: ['sold']
+  },
+  {
+    id: 2,
+    model: 'Toyota',
+    modelDetails: 'Highlander XL',
+    year: 2014,
+    race: '69,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '27,875',
+    photo: '../src/img/cars/Toyota/highLinder_XL.png',
+    tags: ['new']
+  },
+  {
+    id: 3,
+    model: 'Lexus',
+    modelDetails: 'RX 350 LUXURY',
+    year: 2017,
+    race: '39,850',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '38,775',
+    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+  },
+  {
+    id: 4,
+    model: 'Toyota',
+    modelDetails: 'Highlander LE',
+    year: 2016,
+    race: '104,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '23,728',
+    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+  },
+  {
+    id: 5,
+    model: 'Hyundai',
+    modelDetails: 'Elantra',
+    year: 2017,
+    race: '95,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '11,788',
+    photo: '../src/img/cars/Hyundai/elantra.png'
+  },
+  {
+    id: 6,
+    model: 'Mercedes-Benz',
+    modelDetails: 'GLE',
+    year: 2016,
+    race: '59,800',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '38,878',
+    photo: '../src/img/cars/Mercedes/mersedes-benz.png'
+  },
+  {
+    id: 7,
+    model: 'Toyota',
+    modelDetails: 'Venza',
+    year: 2015,
+    race: '99,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '18,620',
+    photo: '../src/img/cars/Toyota/venza.png',
+    tags: ['sold']
+  },
+  {
+    id: 8,
+    model: 'Lexus',
+    modelDetails: 'RX 350 F-SPORT',
+    year: 2016,
+    race: '86,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '34,888',
+    photo: '../src/img/cars/Lexus/x-sport.png',
+    tags: ['new']
+  },
+  {
+    id: 9,
+    model: 'Volkswagen',
+    modelDetails: 'Tiguan',
+    year: 2019,
+    race: '19,855',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '34,888',
+    photo: '../src/img/cars/Volkswagen/Tiguan.png'
+  },
+  {
+    id: 10,
+    model: 'Toyota',
+    modelDetails: 'Highlander XL',
+    year: 2014,
+    race: '69,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '27,875',
+    photo: '../src/img/cars/Toyota/highLinder_XL.png'
+  },
+  {
+    id: 11,
+    model: 'Lexus',
+    modelDetails: 'RX 350 LUXURY',
+    year: 2017,
+    race: '39,850',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '38,775',
+    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+  },
+  {
+    id: 12,
+    model: 'Toyota',
+    modelDetails: 'Highlander LE',
+    year: 2016,
+    race: '104,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '23,728',
+    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+  },
+  {
+    id: 13,
+    model: 'Volkswagen',
+    modelDetails: 'Tiguan',
+    year: 2019,
+    race: '19,855',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '34,888',
+    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    tags: ['new']
+  },
+  {
+    id: 14,
+    model: 'Toyota',
+    modelDetails: 'Highlander XL',
+    year: 2014,
+    race: '69,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '27,875',
+    photo: '../src/img/cars/Toyota/highLinder_XL.png',
+  },
+  {
+    id: 15,
+    model: 'Lexus',
+    modelDetails: 'RX 350 LUXURY',
+    year: 2017,
+    race: '39,850',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '38,775',
+    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+  },
+  {
+    id: 16,
+    model: 'Toyota',
+    modelDetails: 'Highlander LE',
+    year: 2016,
+    race: '104,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '23,728',
+    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+  },
+  {
+    id: 17,
+    model: 'Hyundai',
+    modelDetails: 'Elantra',
+    year: 2017,
+    race: '95,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '11,788',
+    photo: '../src/img/cars/Hyundai/elantra.png'
+  },
+  {
+    "id": 18,
+    model: 'Mercedes-Benz',
+    modelDetails: 'GLE',
+    year: 2016,
+    race: '59,800',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '38,878',
+    photo: '../src/img/cars/Mercedes/mersedes-benz.png'
+  },
+  {
+    id: 19,
+    model: 'Toyota',
+    modelDetails: 'Venza',
+    year: 2015,
+    race: '99,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '18,620',
+    photo: '../src/img/cars/Toyota/venza.png'
+  },
+  {
+    id: 20,
+    model: 'Lexus',
+    modelDetails: 'RX 350 F-SPORT',
+    year: 2016,
+    race: '86,000',
+    transmission: 'Automatic',
+    engine: 'Gas',
+    price: '34,888',
+    photo: '../src/img/cars/Lexus/x-sport.png',
+    tags: ['new']
+  },
+  {
+    id: 21,
+    model: 'Volkswagen',
+    modelDetails: 'Tiguan',
+    year: 2019,
+    race: '19,855',
+    transmission: 'Automatic',
+    engine: 'Diesel',
+    price: '34,888',
+    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    tags: ['new']
+  },
+];
+
+function getCard({model, modelDetails, year, race, transmission, engine, price, photo, tags = []}) {
   const classes = tags.join(' ');
   return `<div class="custom-card ${classes} card p-0 mb-4 me-sm-4 rounded-0 shadow-sm" style="width: 18rem;">
   <img src="${photo}" class="card-img-top rounded-0" alt="${model}">
   <div class="tag-new d-flex justify-content-center align-items-center">New</div>
+  <div class="custom-card__extra">
+    <span class="custom-card__extra-text">SOLD</span>
+  </div>
   <div></div>
   <div class="card-body pb-4">
     <div class="d-flex mb-2">
       <span class="custom-card__year me-2">${year}</span>
-      <h5 class="card-title custom-card__title">${model}</h5>
+      <h5 class="card-title custom-card__title">${model} ${modelDetails}</h5>
     </div>
     <div class="d-flex align-items-center">
       <span class="d-block custom-card__description mr-2">${race} km</span>
       <span class="d-block custom-card__description mr-2">${transmission}</span>
-      <span class="d-block custom-card__description mr-2">${engines}</span>
+      <span class="d-block custom-card__description mr-2">${engine}</span>
     </div>
     <span class="custom-card__price d-block mt-4">$${price}</span>
   </div>
@@ -267,11 +284,6 @@ const modelSelect = document.querySelector('#model-select');
 
 function getFilteredCars() {
   let filtered = [...cars];
-
-  console.log({
-    'year select value': yearSelect.value,
-    'model select value': modelSelect.value
-  });
   
   if(yearSelect.value) {
     filtered = filtered.filter(({year}) => year === +yearSelect.value);
@@ -280,8 +292,6 @@ function getFilteredCars() {
   if(modelSelect.value) {
     filtered = filtered.filter(({model}) => model === modelSelect.value);
   }
-
-  console.log('filtered cards', filtered);
 
   return filtered;
 }
@@ -301,7 +311,6 @@ fillSelect(yearSelect, 'year');
 fillSelect(modelSelect, 'model');
 
 function renderCards() {
-  console.log('rendering cards... fuck yourself!');
   const carsList = document.querySelector('#cars-list');
   carsList.innerHTML = '';
   getFilteredCars().forEach((car) => carsList.innerHTML += getCard(car));

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="src/img/logo-black.svg" />
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -23,20 +24,20 @@
       <div class="row">
         <div class="col-xs-2 col-md-12 p-0 d-flex justify-content-between align-items-center">
 
-          <a class="header__logo">
+          <a class="header__logo" href="#">
             <img src="src/img/logo.svg" alt="logo">
           </a>
 
           <nav class="menu">
             <ul class="nav d-sx-none d-none d-lg-flex justify-content-center menu__list">
               <li class="nav-item menu__item">
-                <a class="nav-link menu__link" href="#">Inventory</a>
+                <a class="nav-link menu__link" href="#inventory">Inventory</a>
               </li>
               <li class="nav-item menu__item">
-                <a class="nav-link menu__link" href="#">Financing</a>
+                <a class="nav-link menu__link" href="#financing">Financing</a>
               </li>
               <li class="nav-item menu__item">
-                <a class="nav-link menu__link" href="#">Contacts</a>
+                <a class="nav-link menu__link" href="#contacts">Contacts</a>
               </li>
               <li class="nav-item menu__item menu__item--desktop">
                 <a class="nav-link menu__link" href="#" tabindex="-1">
@@ -116,7 +117,7 @@
 
   <main class="main page__main">
     <div class="container">
-      <div class="row">
+      <div class="row" id="inventory">
         <h2 class="title main__title mt-5">Current offers</h2>
       </div>
   
@@ -145,7 +146,7 @@
             </select>
           </div>
   
-          <div class="col-lg-4 mx-auto">
+          <div class="col-lg-4 col-xxl-2 mx-auto">
             <button class="btn page__btn btn--colored d-block mx-auto m-xxl-0">40 cars</button>
           </div>
         </div>
@@ -186,12 +187,12 @@
         </div>
       </div>
   
-      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 d-flex justify-content-center align-items-center position-relative" id="cars-list">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 d-flex justify-content-center justify-content-lg-between align-items-center position-relative" id="cars-list">
       </div>
     </div>
 
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="subscription py-4">
+      <div class="subscription py-4" id="contacts">
         <div class="container d-flex flex-column flex-lg-row align-items-center">
           <div class="col-lg-3 col-xxl-5 d-flex flex-column align-items-center align-items-lg-start me-4">
             <h4 class="subscription__title mb-4">Haven't found a suitable vehicle?</h4>
@@ -217,17 +218,159 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row" id="financing">
+        <h2 class="title main__title mt-5">popular questions</h2>
+      </div>
+
+      <div class="questions col-10 col-sm-8 col-md-8 col-lg-10 col-xxl-10 mx-auto mb-4">
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingOne">
+            <div class="accordion-button questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              1. Scope
+            </div>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2. Vehicle characteristics
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingThree">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              3. Warranty / guarantee
+            </div>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body questions__item-body">
+              <p class="questions__item-text">3.1 The statutory warranty is completely excluded to the extent permitted by law.</p>
+              <p class="questions__item-text">
+                3.2 If the vehicle still has a current factory warranty, 
+                a sales representative (brand representative) of the manufacturer 
+                shall provide the services owed therein. If there is a factory 
+                warranty, the beginning of the warranty for new vehicles or 
+                vehicles with a current manufacturer's warranty is not the 
+                date of the first placing on the market, but the beginning of 
+                the warranty in the manufacturer's system or the contractually 
+                agreed beginning of the warranty, if any.
+              </p>
+              <p class="questions__item-text">
+                3.3 If there is a special warranty insurance for the vehicle, 
+                this will take the place of the material warranty according 
+                to section 3.1 and replace it. In this case, the General Terms 
+                and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              4. Trade-in vehicle
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              5. Home Delivery
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              6. Right of return
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              7. Written form
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              8. Applicable law and place of jurisdiction
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer class="footer py-0 py-lg-4 py-xxl-4">
+    <div class="container">
+      <div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center align-items-lg-center">
+
+          <a class="footer__logo mt-4 mt-lg-0" href="#">
+            <img src="src/img/logo.svg" alt="logo">
+          </a>
+
+          <nav class="menu mt-4 mt-lg-0">
+            <ul class="nav d-lg-flex justify-content-center menu__list">
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Inventory</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Financing</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__social my-4 d-flex justify-content-center align-items-center">
+            <a class="footer__social-icon" href="#" tabindex="-1">
+              <img src="src/img/icons/facebook.svg" alt="Facebook logo">
+            </a>
+            <a class="footer__social-icon" href="#" tabindex="-1">
+              <img src="src/img/icons/instagram.svg" alt="Instagram logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="dist/js/index.min.js"></script>
-  <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
