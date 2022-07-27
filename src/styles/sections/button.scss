@@ -1,0 +1,42 @@
+@use '../utils/index.scss' as *;
+
+.btn {
+  padding: 8px 40px;
+  @include base-font-style($mainFont, $smallTextSize, 500, $bodyBgrColor);
+  border: 2px solid $bodyBgrColor;
+  border-radius: 15px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  outline: none;
+
+  &:hover {
+    background-color: $bodyBgrColor;
+    color: $textColor;
+  }
+
+  @include onTablet {
+    padding: 13px 90px;
+    line-height: 27px;
+  }
+
+  &--colored {
+    background-color: $brandColor;
+
+    &:hover {
+      background-color: $bodyBgrColor;
+      border-color: $brandColor;
+      color: $brandColor;
+    }
+  }
+
+  &--subscribe {
+    background-color: $bodyBgrColor;
+    padding: 5px 23px;
+    color: $textColor;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $bodyBgrColor;
+      color: $bodyBgrColor;
+    }
+  }
+}

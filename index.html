@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="src/img/logo-black.svg" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+  />
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/style.min.css" />
+  <title>Monza Motosports</title>
+</head>
+<body class="body page__body">
+
+  <header class="header body__header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 col-md-12 p-0 d-flex justify-content-between align-items-center">
+
+          <a class="header__logo" href="#">
+            <img src="src/img/logo.svg" alt="logo">
+          </a>
+
+          <nav class="menu">
+            <ul class="nav d-sx-none d-none d-lg-flex justify-content-center menu__list">
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#inventory">Inventory</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#financing">Financing</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#contacts">Contacts</a>
+              </li>
+              <li class="nav-item menu__item menu__item--desktop">
+                <a class="nav-link menu__link" href="#" tabindex="-1">
+                  <img src="src/img/icons/facebook.svg" alt="Facebook logo">
+                </a>
+              </li>
+              <li class="nav-item menu__item menu__item--desktop">
+                <a class="nav-link menu__link" href="#" tabindex="-1">
+                  <img src="src/img/icons/instagram.svg" alt="Instagram logo">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__menu-btn d-flex justify-content-between align-items-center d-lg-none" id="burger">
+            <div class="header__burger-btn"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-7">
+          <h1 class="header__main-title">
+            The right way to get a car
+          </h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 d-lg-flex">
+          <p class="mb-4 header__description">
+            Monza Motorsports is a boutique-style dealership specializing in 
+            premium imports. We offer an advanced online vehicle purchasing 
+            experience with integrated financing and contactless home delivery.
+          </p>
+          <p class="header__description">
+            All of our cars come with a 5 day/500 kilometres no-hassle exchange 
+            option. Since 2012 Monza Motorsports has been the benchmark for 
+            innovation in the automotive industry.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <button class="btn page__btn">
+          Browse cars
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu menu--mobile flex-column d-lg-none">
+    <div class="menu__top d-flex justify-content-end">
+      <a href="#" class="material-icons-outlined text-decoration-none menu__close">close</a>
+    </div>
+    <ul class="nav flex-column align-items-center menu__list">
+      <li class="nav-item menu__item menu__item--mobile">
+        <a class="nav-link menu__link" href="#">Inventory</a>
+      </li>
+      <li class="nav-item menu__item menu__item--mobile">
+        <a class="nav-link menu__link" href="#">Financing</a>
+      </li>
+      <li class="nav-item menu__item menu__item--mobile">
+        <a class="nav-link menu__link" href="#">Contacts</a>
+      </li>
+    </ul>
+    <div class="d-flex justify-content-center menu__social">
+      <a class="menu__social-icon" href="https://www.facebook.com/" target="_blank">
+        <img src="src/img/icons/facebook.svg" alt="Facebook logo">
+      </a>
+      <a class="menu__social-icon" href="https://www.instagram.com/" target="_blank">
+        <img src="src/img/icons/instagram.svg" alt="Instagram logo">
+      </a>
+    </div>
+  </nav>
+
+  <main class="main page__main">
+    <div class="container">
+      <div class="row" id="inventory">
+        <h2 class="title main__title mt-5">Current offers</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-sm-12 d-xxl-flex">
+          <div class="d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-md-flex flex-md-row">
+  
+            <select class="form-select select main__select" aria-label="Default select example" id="year-select">
+              <option selected value="">Year</option>
+            </select>
+  
+            <select class="form-select select main__select" aria-label="Default select example">
+              <option selected>Make</option>
+            </select>
+  
+            <select class="form-select select main__select" aria-label="Default select example" id="model-select">
+              <option selected value="">Model</option>
+            </select>
+  
+            <select class="form-select select main__select" aria-label="Default select example">
+              <option selected>Trim</option>
+            </select>
+  
+            <select class="form-select select main__select" aria-label="Default select example">
+              <option selected>Mileage</option>
+            </select>
+          </div>
+  
+          <div class="col-lg-4 col-xxl-2 mx-auto">
+            <button class="btn page__btn btn--colored d-block mx-auto m-xxl-0">40 cars</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row my-4 my-xl-2">
+        <div class="col-lg">
+          <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+  
+            <div class="chekbox form-check mb-4 mb-sm-0">
+              <input class="form-check-input checkbox__input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label mt-1 checkbox__label" for="flexCheckDefault">
+                Instantly available vehicles
+              </label>
+            </div>
+  
+            <div class="sorting d-flex align-items-center">
+              <span class="d-inline-block sorting__text ms-sm-4">Sort by</span>
+  
+              <div class="sorting__icons ms-5 me-2">
+                <a href="#">
+                  <svg class="sorting__up-icon" width="10" height="9" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.33334 0L0.444458 2.88167H2.61112V7.94446H4.05555V2.88167H6.22221L3.33334 0Z" fill="#DF4E3C"/>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="sorting__down-icon" width="10" height="9" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.38892 5.11833V0.055542H2.9445V5.11833H0.777832L3.66671 8L6.55558 5.11833H4.38892Z" fill="#8D8D8D"/>
+                  </svg>
+                </a>
+              </div>
+  
+              <select class="form-select select main__select select--sorting m-0" aria-label="Default select example">
+                <option selected>Publication date (descending)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 d-flex justify-content-center justify-content-lg-between align-items-center position-relative" id="cars-list">
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="subscription py-4" id="contacts">
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <div class="col-lg-3 col-xxl-5 d-flex flex-column align-items-center align-items-lg-start me-4">
+            <h4 class="subscription__title mb-4">Haven't found a suitable vehicle?</h4>
+            <p class="subscription__text mb-4">
+              Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+            </p>
+          </div>
+          <form class="col-lg-5 col-xxl-5 mb-3 subscription__input-container me-4 mb-lg-0">
+            <div class="subscription__fields">
+              <input id="email" type="text" class="form-control subscription__input" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="subscription__icons">
+                <span class="material-icons-outlined subscription__icon-success">
+                  done
+                </span>
+                <span class="material-icons-outlined subscription__icon-error">
+                  close
+                </span>
+              </div>
+            </div>
+            <p class="subscription__error-text">Incorrect email</p>
+          </form>
+          <button class="col-lg-2 col-xxl-2 btn btn--subscribe py-xxl-3">Subscribe now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="financing">
+        <h2 class="title main__title mt-5">popular questions</h2>
+      </div>
+
+      <div class="questions col-10 col-sm-8 col-md-8 col-lg-10 col-xxl-10 mx-auto mb-4">
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingOne">
+            <div class="accordion-button questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              1. Scope
+            </div>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2. Vehicle characteristics
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingThree">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              3. Warranty / guarantee
+            </div>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body questions__item-body">
+              <p class="questions__item-text">3.1 The statutory warranty is completely excluded to the extent permitted by law.</p>
+              <p class="questions__item-text">
+                3.2 If the vehicle still has a current factory warranty, 
+                a sales representative (brand representative) of the manufacturer 
+                shall provide the services owed therein. If there is a factory 
+                warranty, the beginning of the warranty for new vehicles or 
+                vehicles with a current manufacturer's warranty is not the 
+                date of the first placing on the market, but the beginning of 
+                the warranty in the manufacturer's system or the contractually 
+                agreed beginning of the warranty, if any.
+              </p>
+              <p class="questions__item-text">
+                3.3 If there is a special warranty insurance for the vehicle, 
+                this will take the place of the material warranty according 
+                to section 3.1 and replace it. In this case, the General Terms 
+                and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              4. Trade-in vehicle
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              5. Home Delivery
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              6. Right of return
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              7. Written form
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+
+        <div class="accordion-item questions__item">
+          <h2 class="accordion-header" id="headingTwo">
+            <div class="accordion-button collapsed questions__btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              8. Applicable law and place of jurisdiction
+            </div>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer py-0 py-lg-4 py-xxl-4">
+    <div class="container">
+      <div>
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center align-items-lg-center">
+
+          <a class="footer__logo mt-4 mt-lg-0" href="#">
+            <img src="src/img/logo.svg" alt="logo">
+          </a>
+
+          <nav class="menu mt-4 mt-lg-0">
+            <ul class="nav d-lg-flex justify-content-center menu__list">
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Inventory</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Financing</a>
+              </li>
+              <li class="nav-item menu__item">
+                <a class="nav-link menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__social my-4 d-flex justify-content-center align-items-center">
+            <a class="footer__social-icon" href="#" tabindex="-1">
+              <img src="src/img/icons/facebook.svg" alt="Facebook logo">
+            </a>
+            <a class="footer__social-icon" href="#" tabindex="-1">
+              <img src="src/img/icons/instagram.svg" alt="Instagram logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="dist/js/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
