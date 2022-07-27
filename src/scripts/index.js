@@ -24,7 +24,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '34,888',
-    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    photo: 'src/img/cars/Volkswagen/Tiguan.png',
     tags: ['sold']
   },
   {
@@ -36,7 +36,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '27,875',
-    photo: '../src/img/cars/Toyota/highLinder_XL.png',
+    photo: 'src/img/cars/Toyota/highLinder_XL.png',
     tags: ['new']
   },
   {
@@ -48,7 +48,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '38,775',
-    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+    photo: 'src/img/cars/Lexus/lexus_RX350.png'
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '23,728',
-    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+    photo: 'src/img/cars/Toyota/highlinder_LE.png'
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '11,788',
-    photo: '../src/img/cars/Hyundai/elantra.png'
+    photo: 'src/img/cars/Hyundai/elantra.png'
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '38,878',
-    photo: '../src/img/cars/Mercedes/mersedes-benz.png'
+    photo: 'src/img/cars/Mercedes/mersedes-benz.png'
   },
   {
     id: 7,
@@ -92,7 +92,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '18,620',
-    photo: '../src/img/cars/Toyota/venza.png',
+    photo: 'src/img/cars/Toyota/venza.png',
     tags: ['sold']
   },
   {
@@ -104,7 +104,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '34,888',
-    photo: '../src/img/cars/Lexus/x-sport.png',
+    photo: 'src/img/cars/Lexus/x-sport.png',
     tags: ['new']
   },
   {
@@ -116,7 +116,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '34,888',
-    photo: '../src/img/cars/Volkswagen/Tiguan.png'
+    photo: 'src/img/cars/Volkswagen/Tiguan.png'
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '27,875',
-    photo: '../src/img/cars/Toyota/highLinder_XL.png'
+    photo: 'src/img/cars/Toyota/highLinder_XL.png'
   },
   {
     id: 11,
@@ -138,7 +138,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '38,775',
-    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+    photo: 'src/img/cars/Lexus/lexus_RX350.png'
   },
   {
     id: 12,
@@ -149,7 +149,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '23,728',
-    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+    photo: 'src/img/cars/Toyota/highlinder_LE.png'
   },
   {
     id: 13,
@@ -160,7 +160,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '34,888',
-    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    photo: 'src/img/cars/Volkswagen/Tiguan.png',
     tags: ['new']
   },
   {
@@ -172,7 +172,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '27,875',
-    photo: '../src/img/cars/Toyota/highLinder_XL.png',
+    photo: 'src/img/cars/Toyota/highLinder_XL.png',
   },
   {
     id: 15,
@@ -183,7 +183,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '38,775',
-    photo: '../src/img/cars/Lexus/lexus_RX350.png'
+    photo: 'src/img/cars/Lexus/lexus_RX350.png'
   },
   {
     id: 16,
@@ -194,7 +194,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '23,728',
-    photo: '../src/img/cars/Toyota/highlinder_LE.png'
+    photo: 'src/img/cars/Toyota/highlinder_LE.png'
   },
   {
     id: 17,
@@ -205,7 +205,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '11,788',
-    photo: '../src/img/cars/Hyundai/elantra.png'
+    photo: 'src/img/cars/Hyundai/elantra.png'
   },
   {
     "id": 18,
@@ -216,7 +216,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '38,878',
-    photo: '../src/img/cars/Mercedes/mersedes-benz.png'
+    photo: 'src/img/cars/Mercedes/mersedes-benz.png'
   },
   {
     id: 19,
@@ -227,7 +227,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '18,620',
-    photo: '../src/img/cars/Toyota/venza.png'
+    photo: 'src/img/cars/Toyota/venza.png'
   },
   {
     id: 20,
@@ -238,7 +238,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Gas',
     price: '34,888',
-    photo: '../src/img/cars/Lexus/x-sport.png',
+    photo: 'src/img/cars/Lexus/x-sport.png',
     tags: ['new']
   },
   {
@@ -250,7 +250,7 @@ const cars = [
     transmission: 'Automatic',
     engine: 'Diesel',
     price: '34,888',
-    photo: '../src/img/cars/Volkswagen/Tiguan.png',
+    photo: 'src/img/cars/Volkswagen/Tiguan.png',
     tags: ['new']
   },
 ];
