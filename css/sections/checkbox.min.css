@@ -1,0 +1,1 @@
+.checkbox__label{font-family:"Noto Sans",sans-serif;font-size:12px;font-weight:400;color:#8d8d8d;line-height:16px}.checkbox__input{-webkit-box-shadow:none;box-shadow:none}.checkbox__input:checked{background-color:#df4e3c;border-color:#df4e3c;-webkit-box-shadow:none;box-shadow:none}.checkbox__input:checked~.checkbox__label{color:#df4e3c}
