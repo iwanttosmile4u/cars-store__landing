@@ -1,0 +1,29 @@
+@use '../utils/index.scss' as *;
+
+.select {
+  background-color: $bodyBgrColor;
+  @include border-style(1px solid $textOptionColor, 15px);
+  @include base-font-style($mainFont, $spanFontSize, 400, $textColor);
+  outline: none;
+
+  @include onTablet {
+    font-size: $smallTextSize;
+  }
+
+  &:focus {
+    border-color: $brandColor;
+  }
+
+  &--sorting {
+    width: 190px;
+    height: 36px;
+    font-size: 10px;
+    background-color: $bodyBgrColor;
+    border: none;
+
+    &::before {
+      content: 'Sort by';
+      color: $textColor;
+    }
+  }
+}

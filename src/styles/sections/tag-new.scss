@@ -1,0 +1,17 @@
+@use '../utils/index.scss' as *;
+
+.tag-new {
+  display: none!important;
+  width: 66px;
+  height: 24px;
+  background-color: $textColor;
+  color: $bodyBgrColor;
+  border-radius: 0 20px 20px 0;
+  @include base-font-style($secondaryFont, $spanFontSize, 400, $bodyBgrColor);
+  position: absolute;
+  top: 170px;
+}
+
+.new .tag-new {
+  display: flex!important;
+}

@@ -1,0 +1,82 @@
+@use '../utils/index.scss' as *;
+
+.menu {
+  &--mobile {
+    padding: 20px 40px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: $textColor;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    z-index: 2;
+
+    @include onTablet {
+      padding: 20px 80px 0;
+    }
+  }
+
+  &__item {
+    &:nth-child(-n + 3) {
+      transition: border-bottom 0.2s linear;
+
+      &:hover {
+        border-bottom: 2px solid $brandColor;
+      } 
+    }
+
+    &--desktop {
+      &:nth-last-child(-n + 2) {
+        transition: transform 0.3s linear;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &--mobile {
+      margin-bottom: 10px;
+
+      @include onTablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__link {
+    @include base-font-style($mainFont, $smallTextSize, 500, $bodyBgrColor);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $brandColor;
+    }
+  }
+
+  &__close {
+    margin-bottom: 30px;
+
+    font-size: $h3HeaderSize;
+    color: $bodyBgrColor;
+  }
+
+  &__social-icon {
+    margin-top: 20px;
+    transition: transform 0.3s linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__social-icon {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

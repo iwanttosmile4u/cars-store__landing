@@ -1,0 +1,27 @@
+@use '../utils/index.scss' as *;
+
+.questions {
+  background-color: $bodyBgrColor;
+
+  &__item {
+    background-color: $bodyBgrColor;
+    border-color: transparent;
+    border-bottom: 1px solid $textOptionColor;
+  }
+
+  &__btn {
+    background-color: $bodyBgrColor;
+
+    @include base-font-style($mainFont, $h6HeaderSize, 500, $textColor);
+  }
+
+  &__item-body {
+    background-color: #fff;
+  }
+
+  &__item-text {
+    margin-bottom: 10px;
+    @include base-font-style($mainFont, $spanFontSize, 400, $textColor);
+    line-height: 20px;
+  }
+}

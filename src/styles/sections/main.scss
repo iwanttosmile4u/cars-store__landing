@@ -1,0 +1,28 @@
+@use '../utils/index.scss' as *;
+
+.main {
+  background-color: $bodyBgrColor;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__select {
+    width: 120px;
+    height: 38px;
+    margin: 0 auto 20px;
+
+    @include onTablet {
+      width: 170px;
+      height: 48px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    @include onDesktop {
+      margin: 0 10px 0 0;
+    }
+  }
+}

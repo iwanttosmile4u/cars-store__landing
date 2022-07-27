@@ -1,0 +1,57 @@
+@use '../utils/index.scss' as *;
+
+.subscription {
+  background-color: $textColor;
+
+  &__title {
+    @include base-font-style($mainFont, $h5HeaderSize, 600, $bodyBgrColor);
+    line-height: 34px;
+  }
+
+  &__text {
+    @include base-font-style($mainFont, $smallTextSize, 400, $bodyBgrColor);
+    line-height: 20px;
+  }
+
+  &__input-container {
+    width: 300px;
+
+    @include onDesktop {
+      width: 500px;
+    }
+  }
+
+  &__input {
+    padding: 16px;
+    background-color: $textColor;
+    border-radius: 15px;
+  }
+
+  &__fields {
+    position: relative;
+  }
+
+  &__icons {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  &__icon-success {
+    display: none;
+    color: $validationCOlor;
+  }
+
+  &__icon-error {
+    display: none;
+    color: $brandColor;
+  }
+
+  &__error-text {
+    display: none;
+    margin: 5px 0 5px 15px;
+    @include base-font-style($mainFont, 10px, 400, $brandColor);
+  }
+}

@@ -1,0 +1,22 @@
+@use '../utils/index.scss' as *;
+
+.checkbox {
+  &__label {
+    @include base-font-style($mainFont, 12px, 400, $textOptionColor);
+    line-height: 16px;
+  }
+
+  &__input {
+    box-shadow: none;
+
+    &:checked {
+      background-color: $brandColor;
+      border-color: $brandColor;
+      box-shadow: none;
+    }
+
+    &:checked ~ .checkbox__label {
+      color: $brandColor;
+    }
+  }
+}
